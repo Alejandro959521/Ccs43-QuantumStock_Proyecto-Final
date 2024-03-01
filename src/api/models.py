@@ -14,7 +14,7 @@ class User(db.Model):
     password = db.Column(db.String(250), unique=False, nullable=False)
     password_hash = db.Column(db.String(800), unique=False, nullable=False)
     salt = db.Column(db.String(800), unique=False, nullable=False)
-
+       
     # Relacion con Stock
 
     stock = db.relationship("Stock", back_populates="user")
@@ -174,11 +174,9 @@ class Buy_order (db.Model):
             "id": self.id,
             
             "product":self.product.serialize(),
-            "amount": self.amount,
-            
+            "amount": self.amount,           
             
         }
-
 
 class Report (db.Model):
     __tablename__ = 'report'
