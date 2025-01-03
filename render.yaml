@@ -23,11 +23,11 @@ services:
             value: 3.10.6
           - key: DATABASE_URL # Render PostgreSQL database
             fromDatabase:
-                name: postgresql-trapezoidal-42170
+                name: postgresql-trapezoidal-42172
                 property: connectionString
 
 databases: # Render PostgreSQL database
-    - name: postgresql-trapezoidal-42170
+    - name: postgresql-trapezoidal-42172
       region: ohio
       ipAllowList: [] # only allow internal connections
       plan: free # optional; defaults to starter
