@@ -18,7 +18,7 @@ export const Almacen = () => {
             ...Stock,
             [event.target.name]: event.target.value
 
-            //Fin de codigo de Jose
+            
         })
         /* console.log("me ejeuto",event.target.name) */
     }

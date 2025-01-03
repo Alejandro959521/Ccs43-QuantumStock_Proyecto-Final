@@ -111,7 +111,7 @@ export const Dashboard = () => {
 		
 	}, [])
 
-	/* console.log("Esto es la info en el dashboard:", store.info); */
+	// console.log("Esto es la info en el dashboard:", store.info); 
 	return (
 		<div className="container-fluid information vh-100">
 			<div className="row">
